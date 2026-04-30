@@ -1,119 +1,100 @@
-# 🎬 Movie Recommender System (Content-Based Filtering)
+# 🎬 Movie Recommender System (Content-Based)
+
+## 🚀 Overview
+
+This project is a content-based movie recommender system that suggests similar movies based on user selection. It analyzes movie metadata such as cast, keywords, and descriptions to generate accurate recommendations.
 
 ---
 
-## 📌 Overview
-This project is a **Content-Based Movie Recommender System** built using machine learning techniques. It recommends movies based on their similarity to a selected movie by analyzing content features such as descriptions, cast, keywords, and other metadata.
+## 🧠 Features
 
-The system is developed using a dataset from **Kaggle** and provides an interactive user experience through a **Streamlit web application**.
-
----
-
-## 📊 Data Collection
-The dataset used in this project is sourced from Kaggle and contains detailed information about movies, including:
-
-- 🎞 Movie titles  
-- 📝 Descriptions / overviews  
-- 🎭 Cast and crew information  
-- 🔑 Keywords and related metadata  
-
-📌 Dataset Source: Kaggle Movie Dataset
+* Select a movie and get similar recommendations
+* Fast similarity-based results using precomputed data
+* Simple and interactive UI
+* Deployed web application using Streamlit
 
 ---
 
-## ⚙️ Data Preprocessing
-Several preprocessing steps were performed to prepare the data for modeling:
+## 🛠️ Tech Stack
 
-- Handled missing and inconsistent values  
-- Cleaned and structured raw dataset  
-- Combined important features into a single representation (tags)  
-- Applied feature weighting to improve recommendation quality  
-
----
-
-## 🧠 Implementation
-The recommender system is based on **Content-Based Filtering**:
-
-- Movies are converted into text-based feature representations  
-- Text data is transformed into numerical vectors using **Bag of Words (BOW) / CountVectorizer**  
-- Similarity between movies is calculated using **Cosine Similarity**  
-- The system returns the most similar movies based on user selection  
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* NLP (Bag of Words / CountVectorizer)
+* Streamlit
 
 ---
 
-## 💻 Front-End Interface
-A simple and interactive interface is built using **Streamlit**:
+## ⚙️ How It Works
 
-- Users can select a movie from a dropdown list  
-- Click on the **Recommend** button  
-- The system displays a list of similar movies instantly  
-
-The application is also deployed for easy access.
-
----
-
-## 🚀 How to Run
-
-1️⃣ Clone the repository:
-```bash
-git clone https://github.com/AbdulWahab44/100-days-of-machine-learning/tree/main/ML-Projects/movie-recommender-system.git
-cd movie-recommender-system# 🎬 Movie Recommender System (Content-Based Filtering)
+1. Load and clean the movie dataset
+2. Combine important features into tags
+3. Convert text data into vectors (BOW)
+4. Compute similarity using cosine similarity
+5. Recommend top similar movies
 
 ---
 
-## 📌 Overview
-This project is a **Content-Based Movie Recommender System** built using machine learning techniques. It recommends movies based on their similarity to a selected movie by analyzing content features such as descriptions, cast, keywords, and other metadata.
+## 📊 Dataset
 
-The system is developed using a dataset from **Kaggle** and provides an interactive user experience through a **Streamlit web application**.
+The dataset is sourced from Kaggle and includes:
 
----
-
-## 📊 Data Collection
-The dataset used in this project is sourced from Kaggle and contains detailed information about movies, including:
-
-- 🎞 Movie titles  
-- 📝 Descriptions / overviews  
-- 🎭 Cast and crew information  
-- 🔑 Keywords and related metadata  
-
-📌 Dataset Source: Kaggle Movie Dataset
+* Movie titles
+* Overviews
+* Cast and crew
+* Keywords
 
 ---
 
-## ⚙️ Data Preprocessing
-Several preprocessing steps were performed to prepare the data for modeling:
+## 📦 Installation
 
-- Handled missing and inconsistent values  
-- Cleaned and structured raw dataset  
-- Combined important features into a single representation (tags)  
-- Applied feature weighting to improve recommendation quality  
-
----
-
-## 🧠 Implementation
-The recommender system is based on **Content-Based Filtering**:
-
-- Movies are converted into text-based feature representations  
-- Text data is transformed into numerical vectors using **Bag of Words (BOW) / CountVectorizer**  
-- Similarity between movies is calculated using **Cosine Similarity**  
-- The system returns the most similar movies based on user selection  
-
----
-
-## 💻 Front-End Interface
-A simple and interactive interface is built using **Streamlit**:
-
-- Users can select a movie from a dropdown list  
-- Click on the **Recommend** button  
-- The system displays a list of similar movies instantly  
-
-The application is also deployed for easy access.
-
----
-
-## 🚀 How to Run
-
-1️⃣ Clone the repository:
 ```bash
 git clone https://github.com/AbdulWahab44/movie-recommender-system.git
 cd movie-recommender-system
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ Run the App
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 📁 Project Structure
+
+```
+movie-recommender-system/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+├── tmdb_5000_movies.csv
+├── tmdb_5000_credits.csv
+└── notebooks/
+```
+
+---
+
+## 🌍 Future Improvements
+
+* Add movie posters using TMDB API
+* Improve recommendation accuracy
+* Add search functionality
+* Enhance UI (Netflix-style)
+
+---
+
+## 🤝 Contributing
+
+Feel free to fork this repository and improve it.
+
+---
+
+## ⭐ Acknowledgment
+
+Dataset provided by Kaggle. This project is built for learning and demonstrating recommendation systems.
